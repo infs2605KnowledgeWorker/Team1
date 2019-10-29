@@ -26,7 +26,7 @@ public static Connection conn;
      public static void openConnection() {
         if (conn == null) {
             try {
-                conn = DriverManager.getConnection("jdbc:sqlite:knowledgeworkerDB.db");
+                conn = DriverManager.getConnection("jdbc:sqlite:knowledgeworkDB.db");
             } catch (SQLException ex) {
                 ex.printStackTrace();
             }
@@ -39,24 +39,8 @@ public static Connection conn;
         ResultSet rs = st.executeQuery(sqlstatement);
         return rs;
     }
-        public void insertStatement(String insert_query) throws SQLException {
-        java.sql.Statement stmt = null;
-        openConnection();
-        conn.setAutoCommit(false);
-        try {
-            System.out.println("Database opened successfully");
-            stmt = conn.createStatement();
-            System.out.println("The query was: " + insert_query);
-            stmt.executeUpdate(insert_query);
-            stmt.close();
-            conn.commit();
-        } catch (Exception e) {
-            System.err.println(e.getClass().getName() + ": " + e.getMessage());
-            System.exit(0);
-        }
-        stmt.close();
-    }
-    
+     
+   
 public static void createCategoryTable()throws SQLException{
     openConnection();
 
@@ -72,10 +56,10 @@ st.close();
 public static void createEntryTable()throws SQLException{
     openConnection();
     Statement st = conn.createStatement();
-String createEntryQuery = "CREATE TABLE IF NOT EXISTS Entries"
+String createEntryQuery = "CREATE TABLE IF NOT EXISTS Entry"
         +"(start_time TEXT "
         + " ,end_time TEXT"
-        + " ,duration_time TEXT"
+        + " ,duration TEXT"
         + " ,description TEXT NOT NULL"
         +",category_name TEXT NOT NULL);";
 st.execute(createEntryQuery);
