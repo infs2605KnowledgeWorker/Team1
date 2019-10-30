@@ -81,6 +81,7 @@ String createTaskQuery = "CREATE TABLE IF NOT EXISTS Tasks"
         +" ,priority INTEGER;";
 
 st.execute(createTaskQuery);
+  //create dummy data for table 
 
 st.close();
 }
