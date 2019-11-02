@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="404.0" prefWidth="602.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Pane layoutX="-7.0" layoutY="-7.0" prefHeight="97.0" prefWidth="609.0" style="-fx-background-color: #148F77#148F77;">
+         <children>
+            <Label layoutX="208.0" layoutY="29.0" text="Your Kanban" textFill="WHITE">
+               <font>
+                  <Font size="32.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutY="90.0" prefHeight="310.0" prefWidth="150.0" style="-fx-background-color: #1ABC9C#1ABC9C;">
+         <children>
+            <Button layoutY="1.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="150.0" style="-fx-background-color: #48C9B0#48C9B0;" text="Kanban Board" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button layoutY="53.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="150.0" style="-fx-background-color: #1ABC9C#1ABC9C #1ABC9C#1ABC9C;" text="Deep Focus" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button layoutY="105.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="150.0" style="-fx-background-color: #1ABC9C#1ABC9C #1ABC9C#1ABC9C;" text="My Life" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button layoutY="157.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="150.0" style="-fx-background-color: #1ABC9C#1ABC9C #1ABC9C#1ABC9C;" text="Daily Breakdown" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button layoutY="261.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="150.0" style="-fx-background-color: #1ABC9C#1ABC9C #1ABC9C#1ABC9C;" text="Weekly Trends" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button layoutY="209.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="150.0" style="-fx-background-color: #1ABC9C#1ABC9C #1ABC9C#1ABC9C;" text="Weekly Breakdown" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <Pane layoutX="166.0" layoutY="100.0" prefHeight="291.0" prefWidth="420.0">
+         <children>
+            <RadioButton layoutX="257.0" layoutY="7.0" mnemonicParsing="false" text="Do-date" />
+            <RadioButton layoutX="339.0" layoutY="7.0" mnemonicParsing="false" text="Due-date" />
+            <Pane layoutX="1.0" layoutY="71.0" prefHeight="200.0" prefWidth="101.0" style="-fx-background-color: #ffffff; -fx-border-color: #148F77#148F77 #148F77#148F77; -fx-border-radius: 5; -fx-background-radius: 5;" />
+            <Pane layoutX="107.0" layoutY="71.0" prefHeight="200.0" prefWidth="101.0" style="-fx-background-color: #ffffff; -fx-border-color: #148F77#148F77 #148F77#148F77; -fx-border-radius: 5; -fx-background-radius: 5;" />
+            <Pane layoutX="213.0" layoutY="71.0" prefHeight="200.0" prefWidth="101.0" style="-fx-background-color: #ffffff; -fx-border-color: #148F77#148F77 #148F77#148F77; -fx-border-radius: 5; -fx-background-radius: 5;" />
+            <Pane layoutX="319.0" layoutY="71.0" prefHeight="200.0" prefWidth="101.0" style="-fx-background-color: #ffffff; -fx-border-color: #148F77#148F77 #148F77#148F77; -fx-border-radius: 5; -fx-background-radius: 5;" />
+            <Label layoutX="15.0" layoutY="47.0" text="To-do Today" textFill="#148f77">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Label>
+            <Button layoutX="1.0" layoutY="2.0" mnemonicParsing="false" style="-fx-border-radius: 5; -fx-background-color: #148F77#148F77 #148F77#148F77;" text="Create New Task" textFill="WHITE" />
+            <Button layoutX="129.0" layoutY="2.0" mnemonicParsing="false" style="-fx-border-radius: 5; -fx-background-color: #148F77#148F77 #148F77#148F77;" text="Time Spent Entry" textFill="WHITE" />
+            <Label layoutX="111.0" layoutY="47.0" text="To-do Tommorow" textFill="#148f77">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Label>
+            <Label layoutX="230.0" layoutY="47.0" text="To-do 7 Days" textFill="#148f77">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Label>
+            <Label layoutX="323.0" layoutY="47.0" text="Completed Today" textFill="#148f77">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</Pane>
